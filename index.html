@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ-APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>QUIZ APP</h1>
+
+    <div>
+        <span id="timer"></span>
+        <p id="question"></p>
+        <div class="container">
+            <div>
+                <label>
+                    <input onclick="enableBtn()" value="1" type="radio" name="answer">
+                    <span id="option1"></span>
+                </label> 
+            </div>
+            <div>
+                <label>
+                    <input onclick="enableBtn()" value="2" type="radio" name="answer">
+                    <span id="option2"></span>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input onclick="enableBtn()" value="3" type="radio" name="answer">
+                    <span id="option3"></span>
+                </label>
+            </div>
+        </div>
+        <button id="btn" onclick="nextQuestion()" disabled>NEXT</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
